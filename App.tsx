@@ -210,13 +210,6 @@ class App extends React.Component<Props, State> {
               source={{
                 uri: this.state.url,
               }}
-              onNavigationStateChange={this.onStateChange}
-              autoManageStatusBarEnabled={false}
-              geolocationEnabled={true}
-              javaScriptEnabled={true}
-              allowsInlineMediaPlayback
-              mediaPlaybackRequiresUserAction={false}
-              onMessage={(e) => this.onWebviewMessage(e)}
             />
           </>
         )}
